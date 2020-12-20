@@ -11,7 +11,7 @@ class UserService {
      * 
      * @returns {Promise} promise
      */
-    // getUsers = () => OctDiscoService.get(`/users`);
+    getUsers = () => OctDiscoService.get(`/users`);
 
     /**
      * Fetch all comments/resource(s) given user id from the api

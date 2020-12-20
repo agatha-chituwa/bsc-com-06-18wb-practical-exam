@@ -14,10 +14,10 @@ class OctService {
      * @param {String} url
      * @returns {Promise} promise
      */
-    // get = async (url) => {
-    //     return await Promise(Config.JSON_PLACEHOLDER_API.get(url))
-    //         .get().then(response => this.handleReponse(response));
-    // }
+    get = async (url) => {
+        return await Promise(Config.JSON_PLACEHOLDER_API.get(url))
+            .get().then(response => this.handleReponse(response));
+    }
 
     /**
      * Post resource(s) to the api
