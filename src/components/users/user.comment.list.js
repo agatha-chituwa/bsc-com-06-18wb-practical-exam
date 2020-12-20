@@ -9,7 +9,7 @@ const UserCommentListItem = lazy(() => import('../users/user.comment.item'))
  * @param {Props} param0
  * @returns {Component} 
  */
-export const UserCommentList = ({
+ const UserCommentList = ({
     comments, user, 
     handleOnPrevPageClick,
     handleOnNextPageClick,
