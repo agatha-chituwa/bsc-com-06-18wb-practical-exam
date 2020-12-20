@@ -6,11 +6,11 @@ import React from 'react'
  * @param {Props} param0 
  * @returns {Component}
  */
-export const ListGroupItem = ({
-    user,
-    handleUserClick
-}) => {
-    return <a href={`#${user.name}`}
+const ListGroupItem = ({  user, handleUserClick}) => {
+return(
+    <div>
+    
+ <a href={`#${user.name}`}
         className="list-group-item list-group-item-action align-items-center"
         onClick={e => handleUserClick(e, user)}
     >
@@ -20,6 +20,9 @@ export const ListGroupItem = ({
         </div>
         <p className="mb-1">{ user.email }</p>
     </a>
+    </div>
+    );
+
 }
 
-// export default ListGroupItem;
+ export default ListGroupItem;
